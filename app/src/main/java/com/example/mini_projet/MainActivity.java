@@ -1,6 +1,8 @@
 package com.example.mini_projet;
 
-import androidx.appcompat.app.AppCompatActivity;
+import
+        androidx.appcompat.app.AppCompatActivity;
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(MainActivity.this,Sign_up.class);
-                        startActivities(new Intent[]{intent});
+                        startActivity(intent);
                     }
                 });
                 if (username.getText().toString().equals("user") && password.getText().toString().equals("1234")) {
